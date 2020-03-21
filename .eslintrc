@@ -1,0 +1,9 @@
+{
+  "extends": ["react-app", "plugin:prettier/recommended"],
+  "rules": {
+    "prettier/prettier": "off",
+    "max-len": [2, { "code": 120 }],
+    "function-paren-newline": "off",
+    "implicit-arrow-linebreak": "off"
+  }
+}
