@@ -1,5 +1,5 @@
 import React from 'react';
-import dp from './images/dp.jpg';
+import dp from './images/dp2.jpeg';
 import Instagram from './images/Instagram-Svg.svg';
 import LinkedIn from './images/LinkedIn-Svg.svg';
 import Twitter from './images/Twitter-Svg.svg';
