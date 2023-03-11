@@ -3,13 +3,14 @@ import LinkedIn from './images/LinkedIn-Svg.svg';
 import Medium from './images/Medium-Svg.svg';
 import Youtube from './images/Youtube-Svg.svg';
 import Document from './images/document.svg';
+import Github from './images/github.svg';
 import './App.css';
 import Theme from './Theme';
 
 function App() {
   return (
     <Theme>
-      <div className="App" style={{ overflow: 'hidden', height: '100vh' }}>
+      <div className="App">
         <section className="App-header">
           <p>
             I am a JavaScript Developer, with experience in writing Node.js and
@@ -43,6 +44,13 @@ function App() {
               rel="noopener noreferrer"
             >
               <img className="Social-icon" src={Youtube} alt="Youtube link" />
+            </a>
+            <a
+              href="https://www.github.com/ankushkalra"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img className="Social-icon" src={Github} alt="Github link" />
             </a>
           </div>
         </section>
