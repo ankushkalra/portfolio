@@ -12,7 +12,7 @@ function App() {
     <Theme>
       <div className="App">
         <section className="App-header">
-          <p>
+          <p className="title">
             I am a JavaScript Developer, with experience in writing Node.js and
             React.js
           </p>
