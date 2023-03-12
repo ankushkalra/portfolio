@@ -20,11 +20,24 @@
   width: 48px;
   height: 48px;
   padding: 12px 24px;
+  fill: white;
+}
+
+.medium-icon {
+  border: 2px solid white;
+  padding: 0;
+  margin: 0 10px 10px;
+  border-radius: 50%;
+  fill: #212534;
+}
+
+.medium-icon path:not(:first-child) {
+  fill: white !important;
 }
 
 @keyframes slide-down {
   0% {
-    transform: translateY(-20px);
+    transform: translateY(-30px);
     opacity: 0;
   }
   100% {

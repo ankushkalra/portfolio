@@ -1,9 +1,9 @@
 import React from 'react';
-import LinkedIn from './images/LinkedIn-Svg.svg';
-import Medium from './images/Medium-Svg.svg';
-import Youtube from './images/Youtube-Svg.svg';
-import Document from './images/document.svg';
-import Github from './images/github.svg';
+import { ReactComponent as LinkedIn } from './images/LinkedIn-Svg.svg';
+import { ReactComponent as Medium } from './images/Medium-Svg.svg';
+import { ReactComponent as Youtube } from './images/Youtube-Svg.svg';
+import { ReactComponent as Document } from './images/document.svg';
+import { ReactComponent as Github } from './images/github.svg';
 import './App.css';
 import Theme from './Theme';
 
@@ -22,35 +22,35 @@ function App() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img className="Social-icon" src={LinkedIn} alt="LinkedIn link" />
+              <LinkedIn className="Social-icon" />
             </a>
             <a
               href="https://drive.google.com/file/d/1iI25U16J6JB_mPRBC2e4Bdz-Gh_-k76B/view"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img className="Social-icon" src={Document} alt="Resume link" />
+              <Document className="Social-icon" />
             </a>
             <a
               href="https://medium.com/@ankushkalra"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img className="Social-icon" src={Medium} alt="Medium link" />
+              <Medium className="Social-icon medium-icon" />
             </a>
             <a
               href="https://www.youtube.com/@Ankush404"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img className="Social-icon" src={Youtube} alt="Youtube link" />
+              <Youtube className="Social-icon" />
             </a>
             <a
               href="https://www.github.com/ankushkalra"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img className="Social-icon" src={Github} alt="Github link" />
+              <Github className="Social-icon" />
             </a>
           </div>
         </section>
