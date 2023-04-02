@@ -6,6 +6,8 @@ import { ReactComponent as Document } from './images/document.svg';
 import { ReactComponent as Github } from './images/github.svg';
 import './App.css';
 import Theme from './Theme';
+import Project from './components/Project/Project';
+import Card from './components/Card/Card';
 
 function App() {
   return (
@@ -53,6 +55,18 @@ function App() {
               <Github className="Social-icon" />
             </a>
           </div>
+        </section>
+        <section id="projects">
+          <Project
+            project={{
+              name: 'Butterfly',
+              description: 'it does fly',
+              image: ''
+            }}
+          />
+        </section>
+        <section>
+          <Card />
         </section>
       </div>
     </Theme>
