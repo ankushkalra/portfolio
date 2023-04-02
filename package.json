@@ -48,6 +48,7 @@
     "resolve-url-loader": "^4.0.0",
     "sass-loader": "^12.3.0",
     "semver": "^7.3.5",
+    "source-map-explorer": "^2.5.3",
     "source-map-loader": "^3.0.0",
     "style-loader": "^3.3.1",
     "styled-components": "^5.0.1",
@@ -60,14 +61,13 @@
     "workbox-webpack-plugin": "^6.4.1"
   },
   "scripts": {
-    "start": "node scripts/start.js",
+    "start": "NODE_ENV=development node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
+    "bundle-analyzer": "NODE_ENV=production webpack --config=config/webpack.analyze.config.js",
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
   },
   "browserslist": {
     "production": [
@@ -85,7 +85,9 @@
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-prettier": "^3.1.2",
     "gh-pages": "^2.2.0",
-    "prettier": "^2.0.0"
+    "prettier": "^2.0.0",
+    "webpack-bundle-analyzer": "^4.8.0",
+    "webpack-cli": "^5.0.1"
   },
   "jest": {
     "roots": [
@@ -135,10 +137,5 @@
       "jest-watch-typeahead/testname"
     ],
     "resetMocks": true
-  },
-  "babel": {
-    "presets": [
-      "react-app"
-    ]
   }
 }
