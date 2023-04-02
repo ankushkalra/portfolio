@@ -4,6 +4,8 @@ import { ReactComponent as Medium } from './images/Medium-Svg.svg';
 import { ReactComponent as Youtube } from './images/Youtube-Svg.svg';
 import { ReactComponent as Document } from './images/document.svg';
 import { ReactComponent as Github } from './images/github.svg';
+import Card from './components/Card/Card';
+import Project from './components/Project/Project';
 import './App.css';
 
 function App() {
@@ -51,6 +53,18 @@ function App() {
             <Github className="Social-icon" />
           </a>
         </div>
+      </section>
+      <section>
+        <Card />
+      </section>
+      <section id="projects">
+        <Project
+          project={{
+            name: 'Butterfly',
+            description: 'it does fly',
+            image: ''
+          }}
+        />
       </section>
     </div>
   );
