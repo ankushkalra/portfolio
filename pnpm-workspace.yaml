@@ -1,0 +1,6 @@
+allowBuilds:
+  '@parcel/watcher': true
+  '@swc/core': true
+  core-js: false
+  lmdb: false
+  msgpackr-extract: false

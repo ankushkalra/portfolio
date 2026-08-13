@@ -23,6 +23,12 @@
   fill: white;
 }
 
+.social-items-grid {
+  display: grid;
+  grid-template-columns: 48px 48px;
+  gap: 10px;
+}
+
 .medium-icon {
   border: 2px solid white;
   padding: 0;

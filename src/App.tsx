@@ -1,12 +1,13 @@
-import React from 'react';
-import { ReactComponent as LinkedIn } from './images/LinkedIn-Svg.svg';
-import { ReactComponent as Medium } from './images/Medium-Svg.svg';
-import { ReactComponent as Youtube } from './images/Youtube-Svg.svg';
-import { ReactComponent as Document } from './images/document.svg';
-import { ReactComponent as Github } from './images/github.svg';
-import Card from './components/Card/Card';
-import Project from './components/Project/Project';
-import './App.css';
+import React from "react";
+import LinkedIn from "jsx:./images/linkedin-negative.svg";
+// import { ReactComponent as Medium } from "./images/Medium-Svg.svg";
+// import { ReactComponent as Youtube } from "./images/Youtube-Svg.svg";
+import Document from "jsx:./images/drive.svg";
+import Github from "jsx:./images/github-negative.svg";
+import Card from "./components/Card/Card";
+import Project from "./components/Project/Project";
+import "./App.css";
+import SocialItem from "./components/SocialItem/SocialItem";
 
 function App() {
   return (
@@ -16,56 +17,33 @@ function App() {
           I am a JavaScript Developer, with experience in writing Node.js and
           React.js
         </p>
-        <div>
-          <a
-            href="https://www.linkedin.com/in/ankush-kalra-284222125/"
-            target="_blank"
-            rel="noopener noreferrer"
+        <div className="social-items-grid">
+          <SocialItem
+            link={"https://www.linkedin.com/in/ankushkalra"}
+            title="LinkedIn"
           >
-            <LinkedIn className="Social-icon" />
-          </a>
-          <a
-            href="https://drive.google.com/file/d/1iI25U16J6JB_mPRBC2e4Bdz-Gh_-k76B/view"
-            target="_blank"
-            rel="noopener noreferrer"
+            <LinkedIn />
+          </SocialItem>
+          <SocialItem
+            link={"https://www.github.com/ankushkalra"}
+            title="Github"
           >
-            <Document className="Social-icon" />
-          </a>
-          <a
-            href="https://medium.com/@ankushkalra"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Medium className="Social-icon medium-icon" />
-          </a>
-          <a
-            href="https://www.youtube.com/@Ankush404"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Youtube className="Social-icon" />
-          </a>
-          <a
-            href="https://www.github.com/ankushkalra"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Github className="Social-icon" />
-          </a>
+            <Github />
+          </SocialItem>
         </div>
       </section>
-      <section>
-        <Card />
-      </section>
-      <section id="projects">
-        <Project
-          project={{
-            name: 'Butterfly',
-            description: 'it does fly',
-            image: ''
-          }}
-        />
-      </section>
+      {/* <section> */}
+      {/*   <Card /> */}
+      {/* </section> */}
+      {/* <section id="projects"> */}
+      {/*   <Project */}
+      {/*     project={{ */}
+      {/*       name: "Butterfly", */}
+      {/*       description: "it does fly", */}
+      {/*       image: "", */}
+      {/*     }} */}
+      {/*   /> */}
+      {/* </section> */}
     </div>
   );
 }
