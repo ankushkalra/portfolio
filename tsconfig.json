@@ -11,5 +11,11 @@
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true
   },
-  "include": ["src", "src/custom.d.ts", "src/styled.d.ts"]
+  "include": ["src", "src/custom.d.ts", "src/styled.d.ts"],
+  "ts-node": {
+    "compilerOptions": {
+      "moduleResolution": "Node",
+      "module": "CommonJS"
+    }
+  }
 }
