@@ -1,3 +1,10 @@
+/// <reference types="@parcel/config-default" />
+
+declare module "*.css" {
+  const content: any;
+  export default content;
+}
+
 declare module "*.svg" {
   import * as React from "react";
 
