@@ -21,11 +21,13 @@
     "build": "parcel build public/index.html",
     "test": "jest",
     "lint": "eslint",
+    "lint:fix": "eslint --fix",
     "typecheck": "tsc --noEmit",
     "test:watch": "jest --watch",
     "analyze": "parcel build public/index.html --detailed-report 10",
     "predeploy": "npm run typecheck && npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "prepare": "husky"
   },
   "browserslist": {
     "production": [
@@ -59,13 +61,20 @@
     "eslint-plugin-react": "^7.37.5",
     "gh-pages": "^2.2.0",
     "globals": "^17.11.0",
+    "husky": "^9.1.7",
     "jest-environment-jsdom": "29.7.0",
     "jiti": "^2.7.0",
+    "nano-staged": "^1.0.2",
     "nodemon": "^2.0.22",
     "parcel": "^2.16.4",
     "prettier": "^2.0.0",
     "ts-node": "^10.9.2",
     "typescript": "^6.0.3",
     "typescript-eslint": "^8.67.0"
+  },
+  "nano-staged": {
+    "*.{ts,tsx,js,jsx}": [
+      "pnpm run lint:fix"
+    ]
   }
 }
