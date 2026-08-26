@@ -19,7 +19,7 @@ concurrency:
 
 jobs:
   deploy-site:
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    if: ${{ github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'main' }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -45,10 +45,14 @@ jobs:
       - name: Build React App with Parcel
         run: pnpm build
 
-      - name: Upload Build Artifacts
-        uses: actions/upload-pages-artifact@v3
+      - name: Deploy to GitHub Pages Repo
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          path: './dist' # Parcel's default output directory
+          token: ${{ secrets.TARGET_REPO_PAT }}
+          repository-name: ankushkalra/ankushkalra.github.io
+          branch: main
+          folder: dist
+          clean: true
 
       - name: Deploy to GitHub Pages
         id: deployment
