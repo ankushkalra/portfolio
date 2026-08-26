@@ -34,3 +34,5 @@ jobs:
       - name: Run lint check
         run: pnpm run lint
 
+      - name: Run unit tests
+        run: pnpm run test
