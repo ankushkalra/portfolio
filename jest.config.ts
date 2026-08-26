@@ -1,5 +1,5 @@
 export default {
-  testenvironment: "jsdom",
+  testEnvironment: "jsdom",
   transform: {
     "^.+\\.(t|j)sx?$": [
       "@swc/jest",
@@ -14,9 +14,10 @@ export default {
       },
     ],
   },
-  modulenamemapper: {
+  moduleNameMapper: {
+    "^jsx:(.*\\.svg)$": "<rootDir>/__mocks__/svgMock.js",
     "\\.(css|less|scss|sass)$": "identity-obj-proxy",
-    "\\.(jpg|jpeg|png|gif|webp|svg)$": "<rootdir>/__mocks__/filemock.js",
+    "\\.(jpg|jpeg|png|gif|webp|svg)$": "<rootdir>/__mocks__/fileMock.js",
   },
 };
 
