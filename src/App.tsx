@@ -10,9 +10,11 @@ function App() {
   return (
     <div className="App">
       <section className="App-header">
+        <p className="title">Ankush Kalra</p>
+        <p className="title">Senior Software Engineer</p>
         <p className="title">
-          Senior Frontend Engineer building fast, reliable interfaces for
-          high-traffic, data-intensive products
+          I build scalable web applications, developer tools, and AI-powered
+          products.
         </p>
         <div className="social-items-grid">
           <SocialItem
@@ -35,8 +37,19 @@ function App() {
           </SocialItem>
         </div>
       </section>
-      <section>
-        <Card />
+      <section className="card-section">
+        <Card
+          heading="Product Engineering"
+          skills={["React", "Next.js", "TypeScript", "GraphQL"]}
+        />
+        <Card
+          heading="AI Engineering"
+          skills={["LLMs", "Agents", "RAG", "MCP", "AI Apps"]}
+        />
+        <Card
+          heading="System Design"
+          skills={["APIs", "Architecture", "Performance", "Cloud"]}
+        />
       </section>
       {/* <section id="projects"> */}
       {/*   <Project */}

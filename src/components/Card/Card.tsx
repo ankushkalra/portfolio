@@ -1,16 +1,22 @@
 import "./Card.css";
 
-export default function Card() {
+interface CardProps {
+  heading: string;
+  skills: string[];
+}
+
+export default function Card({ heading, skills }: CardProps) {
   return (
-    <div
-      style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        padding: 20,
-      }}
-    >
-      <div className="card">Hi!</div>
+    <div className="card">
+      <h2 className="card-heading">{heading}</h2>
+      <ul className="card-skill-list">
+        {skills.map((skill) => (
+          <li key={skill}>
+            {skill}
+          </li>
+        ))}
+      </ul>
+      <button>Explore</button>
     </div>
   );
 }
