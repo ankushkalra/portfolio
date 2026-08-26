@@ -1,9 +1,7 @@
 import LinkedIn from "jsx:./images/linkedin-negative.svg";
-// import { ReactComponent as Medium } from "./images/Medium-Svg.svg";
-// import { ReactComponent as Youtube } from "./images/Youtube-Svg.svg";
-// import Document from "jsx:./images/drive.svg";
+import Document from "jsx:./images/attachment-negative.svg";
 import Github from "jsx:./images/github-negative.svg";
-// import Card from "./components/Card/Card";
+import Card from "./components/Card/Card";
 // import Project from "./components/Project/Project";
 import "./App.css";
 import SocialItem from "./components/SocialItem/SocialItem";
@@ -13,8 +11,8 @@ function App() {
     <div className="App">
       <section className="App-header">
         <p className="title">
-          I am a JavaScript Developer, with experience in writing Node.js and
-          React.js
+          Senior Frontend Engineer building fast, reliable interfaces for
+          high-traffic, data-intensive products
         </p>
         <div className="social-items-grid">
           <SocialItem
@@ -29,11 +27,17 @@ function App() {
           >
             <Github />
           </SocialItem>
+          <SocialItem
+            link={"https://www.github.com/ankushkalra"}
+            title="Resume"
+          >
+            <Document />
+          </SocialItem>
         </div>
       </section>
-      {/* <section> */}
-      {/*   <Card /> */}
-      {/* </section> */}
+      <section>
+        <Card />
+      </section>
       {/* <section id="projects"> */}
       {/*   <Project */}
       {/*     project={{ */}
