@@ -1,7 +1,7 @@
 /// <reference types="@parcel/config-default" />
 
 declare module "*.css" {
-  const content: any;
+  const content: unknown;
   export default content;
 }
 
@@ -21,4 +21,3 @@ declare module "jsx:*.svg" {
   const Component: React.FunctionComponent<React.SVGProps<SVGSVGElement>>;
   export default Component;
 }
-

@@ -1,8 +1,8 @@
-import React from 'react';
-import './Project.css';
+import React from "react";
+import "./Project.css";
 
-export default function Project({ project = {}, test = {} }) {
-  const { name, description, image } = project;
+export default function Project({ project = {} }) {
+  const { name, description } = project;
   return (
     <div className="project">
       <img src="" alt={`${name} project image`} />
