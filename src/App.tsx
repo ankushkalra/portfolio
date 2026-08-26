@@ -2,10 +2,10 @@ import React from "react";
 import LinkedIn from "jsx:./images/linkedin-negative.svg";
 // import { ReactComponent as Medium } from "./images/Medium-Svg.svg";
 // import { ReactComponent as Youtube } from "./images/Youtube-Svg.svg";
-import Document from "jsx:./images/drive.svg";
+// import Document from "jsx:./images/drive.svg";
 import Github from "jsx:./images/github-negative.svg";
-import Card from "./components/Card/Card";
-import Project from "./components/Project/Project";
+// import Card from "./components/Card/Card";
+// import Project from "./components/Project/Project";
 import "./App.css";
 import SocialItem from "./components/SocialItem/SocialItem";
 

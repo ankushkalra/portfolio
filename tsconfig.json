@@ -6,12 +6,25 @@
     "jsx": "react-jsx",
     "module": "esnext",
     "moduleResolution": "bundler",
-    "allowJs": true,    
+    "jsxImportSource": "react",
+    "allowJs": true,
+    "noUnusedLocals": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "types": [
+      "node",
+      "react",
+      "react-dom"
+    ]
   },
-  "include": ["src", "src/custom.d.ts", "src/styled.d.ts"],
+  "include": [
+    "src/**/*",
+    "src/custom.d.ts",
+    "src/styled.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
   "ts-node": {
     "compilerOptions": {
       "moduleResolution": "Node",

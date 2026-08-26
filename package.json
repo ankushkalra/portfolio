@@ -4,14 +4,9 @@
   "private": true,
   "dependencies": {
     "@types/jest": "^29.4.0",
-    "@types/node": "^18.13.0",
-    "@types/react": "^19.2.0",
-    "@types/react-dom": "^19.2.0",
     "browserslist": "^4.18.1",
     "dotenv": "^10.0.0",
     "dotenv-expand": "^5.1.0",
-    "eslint": "^8.3.0",
-    "eslint-config-react-app": "^7.0.1",
     "express": "^4.18.2",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^29.5.0",
@@ -20,13 +15,13 @@
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
     "styled-components": "^5.3.9",
-    "tailwindcss": "^3.0.2",
-    "typescript": "^4.9.5"
+    "tailwindcss": "^3.0.2"
   },
   "scripts": {
     "start": "parcel public/index.html",
     "build": "parcel build public/index.html",
     "test": "jest",
+    "lint": "eslint",
     "typecheck": "tsc --noEmit",
     "test:watch": "jest --watch",
     "analyze": "parcel build public/index.html --detailed-report 10",
@@ -46,20 +41,31 @@
     ]
   },
   "devDependencies": {
+    "@eslint/json": "^2.0.1",
     "@parcel/config-default": "^2.16.4",
     "@parcel/packager-raw-url": "2.16.4",
     "@parcel/transformer-svg-jsx": "^2.16.4",
     "@parcel/transformer-webmanifest": "2.16.4",
     "@swc/jest": "^0.2.39",
     "@testing-library/jest-dom": "^7.0.1",
+    "@types/node": "^18.19.130",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.4",
     "@types/styled-components": "^5.1.26",
+    "@typescript-eslint/parser": "^8.67.0",
+    "eslint": "^10.9.0",
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.37.5",
     "gh-pages": "^2.2.0",
+    "globals": "^17.11.0",
     "jest-environment-jsdom": "29.7.0",
+    "jiti": "^2.7.0",
     "nodemon": "^2.0.22",
     "parcel": "^2.16.4",
     "prettier": "^2.0.0",
-    "ts-node": "^10.9.2"
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.67.0"
   }
 }
