@@ -1,14 +1,13 @@
-import React from 'react';
-import './Card.css';
+import "./Card.css";
 
 export default function Card() {
   return (
     <div
       style={{
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        padding: 20
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        padding: 20,
       }}
     >
       <div className="card">Hi!</div>

@@ -8,9 +8,6 @@ importers:
 
   .:
     dependencies:
-      '@types/jest':
-        specifier: ^29.4.0
-        version: 29.5.14
       browserslist:
         specifier: ^4.18.1
         version: 4.28.8
@@ -69,6 +66,9 @@ importers:
       '@testing-library/jest-dom':
         specifier: ^7.0.1
         version: 7.0.1(@testing-library/dom@10.4.1)
+      '@types/jest':
+        specifier: ^29.5.14
+        version: 29.5.14
       '@types/node':
         specifier: ^18.19.130
         version: 18.19.130

@@ -1,4 +1,3 @@
-import React from "react";
 import LinkedIn from "jsx:./images/linkedin-negative.svg";
 // import { ReactComponent as Medium } from "./images/Medium-Svg.svg";
 // import { ReactComponent as Youtube } from "./images/Youtube-Svg.svg";
