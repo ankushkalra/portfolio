@@ -4,7 +4,6 @@
 }
 
 .App-header {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,19 +13,6 @@
 
 .App-link {
   color: #61dafb;
-}
-
-.Social-icon {
-  width: 48px;
-  height: 48px;
-  padding: 12px 24px;
-  fill: white;
-}
-
-.social-items-grid {
-  display: grid;
-  grid-template-columns: 48px 48px 48px;
-  gap: 10px;
 }
 
 .medium-icon {
@@ -52,11 +38,6 @@
   }
 }
 
-.title {
-  color: rgba(255, 255, 255, 0.87);
-  animation: slide-down 1.7s cubic-bezier(0.23, 1, 0.32, 1) both;
-}
-
 section {
   color: white;
 }
@@ -65,8 +46,14 @@ section {
   margin: 50px;
 }
 
-.card-section {
+.responsive-list {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 30px;
+  padding: 0;
+  margin: 0;
+
+  @media (--breakpoint-sm) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }

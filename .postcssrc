@@ -1,0 +1,8 @@
+{
+  "plugins": {
+    "@csstools/postcss-global-data": {
+      "files": ["./node_modules/attractive-design-tokens/dist/css/variables.css"]
+    },
+    "postcss-custom-media": {}
+  }
+}

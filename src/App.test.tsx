@@ -8,4 +8,3 @@ it("renders without crashing", () => {
   root.render(<App />);
   root.unmount();
 });
-

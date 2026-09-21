@@ -6,3 +6,6 @@ allowBuilds:
   core-js: false
   lmdb: false
   msgpackr-extract: false
+  unrs-resolver: false
+minimumReleaseAgeExclude:
+  - attractive-design-tokens

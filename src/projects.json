@@ -1,0 +1,105 @@
+[
+  {
+    "title": "Uber AI Solutions – AI Training Platform",
+    "description": "Large-scale, data-intensive platform supporting AI training project creation, reviews, and rework workflows, serving 88K+ monthly active users and 600K+ monthly tasks.",
+    "skills": [
+      "React.js",
+      "Next.js",
+      "TypeScript",
+      "Zustand",
+      "GraphQL",
+      "SSR",
+      "React Hooks",
+      "Context API",
+      "Progressive Web App (PWA)",
+      "Vite",
+      "Jest",
+      "React Testing Library",
+      "Playwright",
+      "Node.js",
+      "Backend-for-Frontend (BFF)",
+      "Frontend Architecture",
+      "Performance Optimization",
+      "Accessibility"
+    ]
+  },
+  {
+    "title": "Unilever Direct Digital Marketing (DDM) Platform",
+    "description": "Enterprise marketing platform supporting 1,500+ brand–market combinations, with workflows for data collection, email campaigns, SMS campaigns, complex forms, and validation.",
+    "skills": [
+      "React.js",
+      "Next.js",
+      "TypeScript",
+      "Redux",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "React Testing Library",
+      "API Integration",
+      "Form Validation",
+      "Performance Optimization"
+    ]
+  },
+  {
+    "title": "HR Management System",
+    "description": "Production HR management application with complex UI workflows, GraphQL API integration, and predictable client-side state management.",
+    "skills": [
+      "React.js",
+      "Next.js",
+      "Redux",
+      "GraphQL",
+      "API Integration",
+      "State Management",
+      "Complex UI Workflows"
+    ]
+  },
+  {
+    "title": "Microservices-Based Web Applications",
+    "description": "Applications supported by Node.js microservices, REST APIs, MongoDB data models, authentication and session management, with cloud and containerized deployment.",
+    "skills": [
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Mongoose",
+      "REST APIs",
+      "Microservices",
+      "Authentication",
+      "Session Management",
+      "Docker",
+      "AWS",
+      "Jest",
+      "Mocha",
+      "Chai"
+    ]
+  },
+  {
+    "title": "CalcificAid – Educational Mobile Application",
+    "description": "Cross-platform educational mobile application developed for Mount Sinai Hospital, delivering an intuitive React Native mobile experience.",
+    "skills": [
+      "React Native",
+      "React.js",
+      "Redux",
+      "Node.js",
+      "REST APIs",
+      "GraphQL",
+      "MongoDB",
+      "AWS",
+      "Mobile UI",
+      "Responsive Design"
+    ]
+  },
+  {
+    "title": "Event-Driven Email Automation Service",
+    "description": "Event-driven email automation service that sends personalized follow-up emails based on email opens and user interactions.",
+    "skills": [
+      "Node.js",
+      "AWS SES",
+      "AWS SNS",
+      "Event-Driven Architecture",
+      "Email Automation",
+      "API Integration",
+      "Personalization",
+      "Backend Development"
+    ]
+  }
+]

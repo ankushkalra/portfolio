@@ -1,22 +1,20 @@
-import "./Card.css";
+import "./SkillCard.css";
 
-interface CardProps {
+interface SkillCardProps {
   heading: string;
   skills: string[];
 }
 
-export default function Card({ heading, skills }: CardProps) {
+export default function SkillCard({ heading, skills }: SkillCardProps) {
   return (
-    <div className="card">
+    <li className="card">
       <h2 className="card-heading">{heading}</h2>
       <ul className="card-skill-list">
         {skills.map((skill) => (
-          <li key={skill}>
-            {skill}
-          </li>
+          <li key={skill}>{skill}</li>
         ))}
       </ul>
       <button>Explore</button>
-    </div>
+    </li>
   );
 }

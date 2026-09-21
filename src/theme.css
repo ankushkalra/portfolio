@@ -1,0 +1,9 @@
+:root {
+  --color-bg: #121212;
+  --card-bg: #242424;
+}
+
+[data-theme="light"] {
+  --color-bg: #ffffff;
+  --card-bg: #242424;
+}

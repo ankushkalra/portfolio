@@ -1,7 +1,16 @@
 /// <reference types="@parcel/config-default" />
 
+// declare module "*.css" {
+//   const content: unknown;
+//   export default content;
+// }
+declare module "*.module.css" {
+  const content: Record<string, string>;
+  export default content;
+}
+
 declare module "*.css" {
-  const content: unknown;
+  const content: Record<string, string>;
   export default content;
 }
 

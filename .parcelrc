@@ -2,7 +2,9 @@
   "extends": "@parcel/config-default",
   "transformers": {
     "jsx:*.svg": ["...", "@parcel/transformer-svg-jsx"],
-    "jsx:*": ["..."]
+    "jsx:*": ["..."],
+    "*.module.css": ["@parcel/transformer-postcss", "@parcel/transformer-css"],
+    "*.css": ["@parcel/transformer-postcss", "@parcel/transformer-css"]
   }
 }
 

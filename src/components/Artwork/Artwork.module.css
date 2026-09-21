@@ -1,0 +1,200 @@
+/* The stage */
+.morphingObject {
+  --mx: 0;
+  --my: 0;
+
+  position: relative;
+  width: 420px;
+  height: 420px;
+
+  transform:
+    translate(
+      calc(var(--mx) * 10px),
+      calc(var(--my) * 10px)
+    )
+    rotateX(calc(var(--my) * -3deg))
+    rotateY(calc(var(--mx) * 3deg));
+
+  transform-style: preserve-3d;
+
+  transition:
+    transform 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+
+  animation: float 8s ease-in-out infinite;
+}
+
+
+/*
+ * The actual physical form.
+ *
+ * Multiple border-radius values make the shape
+ * feel less like a mathematical circle and more
+ * like something that has been pushed around.
+ */
+.morphingObject::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background: #d98b73;
+
+  border-radius:
+    63% 37%
+    54% 46% /
+    42% 58%
+  ;
+
+  transform:
+    rotate(-8deg)
+    scale(0.96);
+
+  box-shadow:
+    0 24px 50px rgba(36, 35, 31, 0.08);
+
+  animation:
+    morph 14s ease-in-out infinite,
+    breathe 7s ease-in-out infinite;
+}
+
+
+/*
+ * A subtle inner highlight gives the object
+ * a sense of depth without turning it into
+ * a glossy 3D blob.
+ */
+.morphingObject::after {
+  content: "";
+
+  position: absolute;
+  inset: 8%;
+
+  border-radius:
+    58% 42%
+    45% 55% /
+    55% 45%;
+
+  background:
+    radial-gradient(
+      circle at 32% 27%,
+      rgba(255, 255, 255, 0.20),
+      transparent 32%
+    );
+
+  opacity: 0.7;
+
+  animation:
+    inner-morph 14s ease-in-out infinite;
+}
+
+
+/* Slow vertical movement */
+@keyframes float {
+  0%,
+  100% {
+    transform:
+      translate(
+        calc(var(--mx) * 10px),
+        calc(var(--my) * 10px - 4px)
+      )
+      rotateX(calc(var(--my) * -3deg))
+      rotateY(calc(var(--mx) * 3deg));
+  }
+
+  50% {
+    transform:
+      translate(
+        calc(var(--mx) * 10px),
+        calc(var(--my) * 10px + 5px)
+      )
+      rotateX(calc(var(--my) * -3deg))
+      rotateY(calc(var(--mx) * 3deg));
+  }
+}
+
+
+/*
+ * The important animation:
+ * the shape continuously changes its
+ * proportions rather than simply rotating.
+ */
+@keyframes morph {
+  0% {
+    border-radius:
+      63% 37%
+      54% 46% /
+      42% 58%;
+
+    transform: rotate(-8deg) scale(0.96);
+  }
+
+  25% {
+    border-radius:
+      48% 52%
+      67% 33% /
+      58% 42%;
+
+    transform: rotate(3deg) scale(1);
+  }
+
+  50% {
+    border-radius:
+      35% 65%
+      43% 57% /
+      62% 38%;
+
+    transform: rotate(8deg) scale(0.97);
+  }
+
+  75% {
+    border-radius:
+      58% 42%
+      31% 69% /
+      45% 55%;
+
+    transform: rotate(-2deg) scale(1.01);
+  }
+
+  100% {
+    border-radius:
+      63% 37%
+      54% 46% /
+      42% 58%;
+
+    transform: rotate(-8deg) scale(0.96);
+  }
+}
+
+
+@keyframes breathe {
+  0%,
+  100% {
+    scale: 1;
+  }
+
+  50% {
+    scale: 1.025 0.98;
+  }
+}
+
+
+@keyframes inner-morph {
+  0%,
+  100% {
+    border-radius:
+      58% 42%
+      45% 55% /
+      55% 45%;
+
+    transform: translate(0, 0);
+  }
+
+  50% {
+    border-radius:
+      42% 58%
+      55% 45% /
+      48% 52%;
+
+    transform: translate(3%, -2%);
+  }
+}

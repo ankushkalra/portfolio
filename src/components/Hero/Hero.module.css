@@ -1,0 +1,14 @@
+.hero {
+  display: none;
+
+  @media (--breakpoint-sm) {
+    min-height: 100svh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    padding-top: 20;
+  }
+}

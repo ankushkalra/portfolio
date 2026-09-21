@@ -1,0 +1,29 @@
+.title {
+  color: rgba(255, 255, 255, 0.87);
+  animation: slide-down 1.7s cubic-bezier(0.23, 1, 0.32, 1) both;
+  margin: var(--spacing-extra-small);
+}
+
+.gradientText {
+  background: linear-gradient(90deg, #6366f1 0%, #8b5cf6 50%, #a855f7 100%);
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  font-size: 2rem;
+}
+
+.Social-icon {
+  width: var(--spacing-extra-large);
+  height: var(--spacing-extra-large);
+  padding: var(--spacing-small) var(--spacing-large);
+  fill: white;
+}
+
+.social-items-grid {
+  display: grid;
+  grid-template-columns: repeat(3, var(--spacing-extra-large));
+  gap: var(--spacing-small);
+  justify-content: space-around;
+}
