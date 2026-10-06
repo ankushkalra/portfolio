@@ -1,2 +1,2 @@
-pnpm run typecheck
+sh .husky/typecheck-staged.sh
 pnpm exec nano-staged

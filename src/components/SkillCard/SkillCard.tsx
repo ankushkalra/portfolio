@@ -1,4 +1,7 @@
-import "./SkillCard.css";
+import Button from "../Button/Button";
+import Card from "~/src/components/Card/Card";
+import styles from "./SkillCard.module.css";
+import Tag from "~/src/components/Tag/Tag";
 
 interface SkillCardProps {
   heading: string;
@@ -7,14 +10,16 @@ interface SkillCardProps {
 
 export default function SkillCard({ heading, skills }: SkillCardProps) {
   return (
-    <li className="card">
-      <h2 className="card-heading">{heading}</h2>
-      <ul className="card-skill-list">
+    <Card>
+      <h2 className={styles["card-heading"]}>{heading}</h2>
+      <ul className={styles["card-skill-list"]}>
         {skills.map((skill) => (
-          <li key={skill}>{skill}</li>
+          <Tag as="li" key={skill}>
+            {skill}
+          </Tag>
         ))}
       </ul>
-      <button>Explore</button>
-    </li>
+      <Button>Explore</Button>
+    </Card>
   );
 }

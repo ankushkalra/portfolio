@@ -3,17 +3,8 @@
   padding: 20px;
   display: flex;
   flex-direction: column;
+  gap: 10px;
   justify-content: space-between;
   align-items: center;
-}
-
-.card-skill-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  padding: 0;
-}
-
-.card-skill-list li {
-  display: block;
+  border-radius: 8px;
 }
