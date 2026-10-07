@@ -1,0 +1,40 @@
+.card {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+
+  background: #181817;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+
+  color: #f4f1ea;
+  text-decoration: none;
+
+  transition: background-color 400ms ease, color 400ms ease,
+    border-color 400ms ease;
+}
+
+.card:hover {
+  background: #f4f1ea;
+  color: #24231f;
+  border-color: #f4f1ea;
+}
+
+.skills {
+  margin: 0;
+  font-size: small;
+}
+
+.title {
+  padding-left: 0;
+  margin-top: 0;
+  text-align: left;
+}
+
+.leftContainer {
+  display: flex;
+  flex-direction: column;
+}
