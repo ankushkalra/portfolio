@@ -2,6 +2,7 @@
   {
     "title": "Uber AI Solutions – AI Training Platform",
     "description": "Large-scale, data-intensive platform supporting AI training project creation, reviews, and rework workflows, serving 88K+ monthly active users and 600K+ monthly tasks.",
+    "short_description": "Data-intensive AI training platform serving 88K+ monthly users and 600K+ monthly tasks.",
     "skills": [
       "React.js",
       "Next.js",
@@ -26,6 +27,7 @@
   {
     "title": "Unilever Direct Digital Marketing (DDM) Platform",
     "description": "Enterprise marketing platform supporting 1,500+ brand–market combinations, with workflows for data collection, email campaigns, SMS campaigns, complex forms, and validation.",
+    "short_description": "Enterprise marketing platform for email and SMS campaigns across 1,500+ brand–market combinations.",
     "skills": [
       "React.js",
       "Next.js",
@@ -43,6 +45,7 @@
   {
     "title": "HR Management System",
     "description": "Production HR management application with complex UI workflows, GraphQL API integration, and predictable client-side state management.",
+    "short_description": "Production HR app with complex UI workflows, GraphQL integration, and predictable state management.",
     "skills": [
       "React.js",
       "Next.js",
@@ -56,6 +59,7 @@
   {
     "title": "Microservices-Based Web Applications",
     "description": "Applications supported by Node.js microservices, REST APIs, MongoDB data models, authentication and session management, with cloud and containerized deployment.",
+    "short_description": "Web apps backed by Node.js microservices, REST APIs, and MongoDB, deployed on cloud with containers.",
     "skills": [
       "Node.js",
       "Express.js",
@@ -75,6 +79,7 @@
   {
     "title": "CalcificAid – Educational Mobile Application",
     "description": "Cross-platform educational mobile application developed for Mount Sinai Hospital, delivering an intuitive React Native mobile experience.",
+    "short_description": "Cross-platform React Native educational app built for Mount Sinai Hospital.",
     "skills": [
       "React Native",
       "React.js",
@@ -91,6 +96,7 @@
   {
     "title": "Event-Driven Email Automation Service",
     "description": "Event-driven email automation service that sends personalized follow-up emails based on email opens and user interactions.",
+    "short_description": "Event-driven service that sends personalized follow-up emails based on opens and user interactions.",
     "skills": [
       "Node.js",
       "AWS SES",

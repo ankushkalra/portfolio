@@ -1,10 +1,17 @@
 .card {
   border: 1px solid gray;
   padding: 20px;
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   gap: 10px;
-  justify-content: space-between;
+  list-style: none;
+  /* justify-content: space-between; */
   align-items: center;
   border-radius: 8px;
+}
+
+.card:hover {
+  background: #f4f1ea;
+  color: #24231f;
+  border-color: #f4f1ea;
 }
