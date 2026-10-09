@@ -13,14 +13,17 @@ function Home() {
           <MobileCard
             title="Product Engineering"
             skills={["React", "Next.js", "TypeScript", "GraphQL"]}
+            href="/projects"
           />
           <MobileCard
             title="AI Engineering"
             skills={["LLMs", "Agents", "RAG", "MCP", "AI Apps"]}
+            href="/projects"
           />
           <MobileCard
             title="System Design"
             skills={["APIs", "Architecture", "Performance", "Cloud"]}
+            href="/projects"
           />
         </ul>
       </section>
