@@ -1,4 +1,4 @@
-import { defineConfig } from "vitest/config";
+import { configDefaults, defineConfig } from "vitest/config";
 import path from "node:path";
 
 const root = import.meta.dirname;
@@ -17,6 +17,7 @@ export default defineConfig({
     ],
   },
   test: {
+    exclude: [...configDefaults.exclude, "e2e/**"],
     environment: "jsdom",
     globals: true,
   },
