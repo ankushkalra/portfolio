@@ -1,0 +1,12 @@
+[
+  {
+    "title": "vscode.nvim bug fix",
+    "link": "https://github.com/Mofiqul/vscode.nvim/pull/246",
+    "description": "Fixed a runtime bug in the open-source vscode.nvim project via a pull request (https://github.com/Mofiqul/vscode.nvim/pull/246).",
+    "short_description": "Fixed a runtime bug in the open-source vscode.nvim project via a pull request (https://github.com/Mofiqul/vscode.nvim/pull/246).",
+    "bullet_points": [
+      "Identified and fixed a runtime bug in the open-source project.",
+      "Submitted the fix as a pull request to the upstream repository."
+    ]
+  }
+]
