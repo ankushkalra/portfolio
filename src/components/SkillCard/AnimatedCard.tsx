@@ -1,6 +1,6 @@
 import "./AnimatedCard.css";
 
-export default function Card() {
+export default function AnimatedCard() {
   return (
     <div
       style={{
