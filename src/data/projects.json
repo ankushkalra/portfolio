@@ -3,6 +3,16 @@
     "title": "Uber AI Solutions – AI Training Platform",
     "description": "Large-scale, data-intensive platform supporting AI training project creation, reviews, and rework workflows, serving 88K+ monthly active users and 600K+ monthly tasks.",
     "short_description": "Data-intensive AI training platform serving 88K+ monthly users and 600K+ monthly tasks.",
+    "bullet_points": [
+      "Engineered high-performance frontend systems for a platform serving 88K+ monthly active users and 600K+ monthly tasks.",
+      "Owned frontend architecture and state management for complex, high-concurrency workflows, ensuring responsive UX under frequent data updates.",
+      "Improved frontend performance by 15% (page load time, TTI, interaction latency) using code splitting, memoization, virtualized lists, and optimized API consumption.",
+      "Reduced production UI defects by 20% through Playwright tests, frontend validation, and robust error handling.",
+      "Provided on-call production support using PagerDuty, maintaining incident runbooks and resolving critical issues within SLA.",
+      "Applied accessibility best practices (semantic HTML, keyboard navigation, ARIA patterns) to improve inclusivity and cross-device user experience.",
+      "Mentored junior engineers, provided constructive code reviews, and drove adoption of scalable frontend architecture and state management best practices.",
+      "Gained exposure to ML data pipelines and large-scale annotation systems through close work with AI training workflows."
+    ],
     "skills": [
       "React.js",
       "Next.js",
@@ -28,6 +38,11 @@
     "title": "Unilever Direct Digital Marketing (DDM) Platform",
     "description": "Enterprise marketing platform supporting 1,500+ brand–market combinations, with workflows for data collection, email campaigns, SMS campaigns, complex forms, and validation.",
     "short_description": "Enterprise marketing platform for email and SMS campaigns across 1,500+ brand–market combinations.",
+    "bullet_points": [
+      "Built scalable UIs for data collection, email, and SMS campaign management, handling complex forms and validations.",
+      "Refactored legacy frontend code to modern React patterns, improving maintainability and reducing UI defects by 20%.",
+      "Integrated frontend applications with backend and third-party APIs, ensuring reliable, real-time data flow across campaign workflows."
+    ],
     "skills": [
       "React.js",
       "Next.js",
@@ -46,6 +61,11 @@
     "title": "HR Management System",
     "description": "Production HR management application with complex UI workflows, GraphQL API integration, and predictable client-side state management.",
     "short_description": "Production HR app with complex UI workflows, GraphQL integration, and predictable state management.",
+    "bullet_points": [
+      "Developed and enhanced complex UI workflows integrating GraphQL APIs.",
+      "Optimized client-side data handling for better performance.",
+      "Built and shipped production Next.js and React applications with predictable state management using Redux."
+    ],
     "skills": [
       "React.js",
       "Next.js",
@@ -60,6 +80,12 @@
     "title": "Microservices-Based Web Applications",
     "description": "Applications supported by Node.js microservices, REST APIs, MongoDB data models, authentication and session management, with cloud and containerized deployment.",
     "short_description": "Web apps backed by Node.js microservices, REST APIs, and MongoDB, deployed on cloud with containers.",
+    "bullet_points": [
+      "Developed Node.js microservices using ExpressJS and MongoDB.",
+      "Designed REST APIs, MongoDB data models (Mongoose schemas), authentication, and session handling.",
+      "Improved application reliability by writing unit and integration tests using Jest and Mocha/Chai.",
+      "Maintained and enhanced Next.js, React and Redux applications, delivering new features and performance improvements."
+    ],
     "skills": [
       "Node.js",
       "Express.js",
@@ -80,6 +106,11 @@
     "title": "CalcificAid – Educational Mobile Application",
     "description": "Cross-platform educational mobile application developed for Mount Sinai Hospital, delivering an intuitive React Native mobile experience.",
     "short_description": "Cross-platform React Native educational app built for Mount Sinai Hospital.",
+    "bullet_points": [
+      "Developed the cross-platform mobile app using React Native.",
+      "Converted designs into responsive, production-ready web and mobile apps.",
+      "Built reusable components to accelerate development across projects."
+    ],
     "skills": [
       "React Native",
       "React.js",
@@ -97,6 +128,11 @@
     "title": "Event-Driven Email Automation Service",
     "description": "Event-driven email automation service that sends personalized follow-up emails based on email opens and user interactions.",
     "short_description": "Event-driven service that sends personalized follow-up emails based on opens and user interactions.",
+    "bullet_points": [
+      "Built the event-driven email automation service using AWS SES and SNS.",
+      "Triggered personalized follow-up emails based on email opens and user interactions.",
+      "Developed and maintained Node.js REST and GraphQL APIs for scalable data access."
+    ],
     "skills": [
       "Node.js",
       "AWS SES",

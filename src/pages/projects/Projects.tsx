@@ -1,5 +1,5 @@
 import Project from "~/src/components/Project/Project";
-import projects from "~/src/projects.json";
+import projects from "~/src/data/projects.json";
 import styles from "~/src/App.module.css";
 
 const Projects = () => {
