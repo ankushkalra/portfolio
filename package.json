@@ -4,7 +4,7 @@
   "private": true,
   "source": "public/index.html",
   "dependencies": {
-    "attractive-design-tokens": "^0.2.8",
+    "attractive-design-tokens": "^0.2.9",
     "browserslist": "^4.28.8",
     "dotenv": "^10.0.0",
     "dotenv-expand": "^5.1.0",

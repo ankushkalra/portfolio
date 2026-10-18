@@ -6,7 +6,7 @@ interface ProjectCardProps {
   project: Project;
 }
 
-export default function Project({ project }: ProjectCardProps) {
+export default function ProjectCard({ project }: ProjectCardProps) {
   const { id, title, short_description } = project;
   return (
     <Card>

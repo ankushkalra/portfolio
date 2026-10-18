@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router";
 import Projects from "~/src/pages/projects/Projects";
 import Home from "~/src/pages/home/Home";
-import ProjectDetailsPage from "./pages/project-details/ProjectDetailsPage";
+import ProjectDetailsPage from "~/src/pages/project-details/ProjectDetailsPage";
 
 const App = () => {
   return (
