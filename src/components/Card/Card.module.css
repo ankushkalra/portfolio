@@ -8,10 +8,19 @@
   /* justify-content: space-between; */
   align-items: center;
   border-radius: 8px;
-}
+  color: #f4f1ea;
 
-.card:hover {
-  background: #f4f1ea;
-  color: #24231f;
-  border-color: #f4f1ea;
+  & a {
+    color: #66b2ff;
+  }
+
+  &:hover a {
+    color: #24231f;
+  }
+
+  &:hover {
+    background: #f4f1ea;
+    color: #24231f;
+    border-color: #f4f1ea;
+  }
 }
