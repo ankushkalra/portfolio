@@ -7,14 +7,22 @@ interface ProjectCardProps {
 }
 
 export default function ProjectCard({ project }: ProjectCardProps) {
-  const { id, title, short_description } = project;
+  const { id, title, image, short_description } = project;
   return (
     <Card>
-      {/* <img src={null} alt={`${name} project image`} /> */}
-      <h3 className={styles.title}>
-        <a href={`/projects/${id}`}>{title}</a>
-      </h3>
-      <p className={styles.description}>{short_description}</p>
+      <div className={styles.layout}>
+        <div>
+          <h2 className={styles.title}>
+            <a href={`/projects/${id}`}>{title}</a>
+          </h2>
+          <p className={styles.description}>{short_description}</p>
+        </div>
+        <img
+          className={styles.image}
+          src={image}
+          alt={`${title} project image`}
+        />
+      </div>
     </Card>
   );
 }

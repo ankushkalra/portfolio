@@ -1,0 +1,22 @@
+.title {
+  font-size: 2rem;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+}
+
+.point {
+  font-size: 1rem;
+
+  &::before {
+    content: "⚡️ ";
+  }
+}
