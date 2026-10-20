@@ -13,14 +13,14 @@
   color: #f4f1ea;
   text-decoration: none;
 
-  transition: background-color 400ms ease, color 400ms ease,
-    border-color 400ms ease;
+  transition: background-color 200ms ease, transform 200ms ease,
+    border-color 200ms ease;
 }
 
 .card:hover {
-  background: #f4f1ea;
-  color: #24231f;
-  border-color: #f4f1ea;
+  background: #2d2d2d;
+  border-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
 }
 
 .skills {

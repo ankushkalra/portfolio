@@ -8,9 +8,12 @@
 
 .layout {
   display: grid;
-  grid-template-columns: 1fr 1fr;
   gap: 10px;
   height: 100%;
+
+  @media (--breakpoint-sm) {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .image {
