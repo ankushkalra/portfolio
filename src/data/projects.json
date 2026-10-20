@@ -5,6 +5,19 @@
     "image": "/illustrations/uber-ai-solutions.jpeg",
     "description": "Large-scale, data-intensive platform supporting AI training project creation, reviews, and rework workflows, serving 88K+ monthly active users and 600K+ monthly tasks.",
     "short_description": "Data-intensive AI training platform serving 88K+ monthly users and 600K+ monthly tasks.",
+    "mini_description": "Data-intensive AI training platform for project creation, reviews, and rework workflows.",
+    "stats": [
+      { "value": "88K+", "label": "monthly users" },
+      { "value": "600K+", "label": "monthly tasks" }
+    ],
+    "tags": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Zustand",
+      "GraphQL",
+      "Playwright"
+    ],
     "bullet_points": [
       "Engineered high-performance frontend systems for a platform serving 88K+ monthly active users and 600K+ monthly tasks.",
       "Owned frontend architecture and state management for complex, high-concurrency workflows, ensuring responsive UX under frequent data updates.",
@@ -42,6 +55,12 @@
     "image": "/illustrations/unilever-ddm.jpeg",
     "description": "Enterprise marketing platform supporting 1,500+ brand–market combinations, with workflows for data collection, email campaigns, SMS campaigns, complex forms, and validation.",
     "short_description": "Enterprise marketing platform for email and SMS campaigns across 1,500+ brand–market combinations.",
+    "mini_description": "Enterprise marketing platform for email and SMS campaigns, data collection, and complex forms.",
+    "stats": [
+      { "value": "1,500+", "label": "brand–market combos" },
+      { "value": "20%", "label": "fewer UI defects" }
+    ],
+    "tags": ["React", "Next.js", "TypeScript", "Redux", "Node.js", "MongoDB"],
     "bullet_points": [
       "Built scalable UIs for data collection, email, and SMS campaign management, handling complex forms and validations.",
       "Refactored legacy frontend code to modern React patterns, improving maintainability and reducing UI defects by 20%.",
@@ -67,6 +86,9 @@
     "image": "/illustrations/manaze.jpeg",
     "description": "Production HR management application with complex UI workflows, GraphQL API integration, and predictable client-side state management.",
     "short_description": "Production HR app with complex UI workflows, GraphQL integration, and predictable state management.",
+    "mini_description": "Production HR app with complex UI workflows and GraphQL integration.",
+    "stats": [],
+    "tags": ["React", "Next.js", "Redux", "GraphQL"],
     "bullet_points": [
       "Developed and enhanced complex UI workflows integrating GraphQL APIs.",
       "Optimized client-side data handling for better performance.",
@@ -88,6 +110,9 @@
     "image": "/illustrations/harmony.jpeg",
     "description": "Applications supported by Node.js microservices, REST APIs, MongoDB data models, authentication and session management, with cloud and containerized deployment.",
     "short_description": "Web apps backed by Node.js microservices, REST APIs, and MongoDB, deployed on cloud with containers.",
+    "mini_description": "Web apps backed by Node.js microservices, REST APIs, and MongoDB.",
+    "stats": [],
+    "tags": ["Node.js", "Express", "MongoDB", "REST APIs", "Docker", "AWS"],
     "bullet_points": [
       "Developed Node.js microservices using ExpressJS and MongoDB.",
       "Designed REST APIs, MongoDB data models (Mongoose schemas), authentication, and session handling.",
@@ -116,6 +141,12 @@
     "image": "/illustrations/calcific.jpeg",
     "description": "Cross-platform educational mobile application developed for Mount Sinai Hospital, delivering an intuitive React Native mobile experience.",
     "short_description": "Cross-platform React Native educational app built for Mount Sinai Hospital.",
+    "mini_description": "Cross-platform educational app built with React Native.",
+    "stats": [
+      { "value": "Mount Sinai", "label": "hospital client" },
+      { "value": "iOS + Android", "label": "cross-platform" }
+    ],
+    "tags": ["React Native", "React", "Redux", "Node.js", "GraphQL", "AWS"],
     "bullet_points": [
       "Developed the cross-platform mobile app using React Native.",
       "Converted designs into responsive, production-ready web and mobile apps.",
@@ -140,6 +171,9 @@
     "image": "/illustrations/email-workflow.jpeg",
     "description": "Event-driven email automation service that sends personalized follow-up emails based on email opens and user interactions.",
     "short_description": "Event-driven service that sends personalized follow-up emails based on opens and user interactions.",
+    "mini_description": "Event-driven service sending personalized follow-ups based on opens and interactions.",
+    "stats": [],
+    "tags": ["Node.js", "AWS SES", "AWS SNS", "GraphQL", "Event-Driven"],
     "bullet_points": [
       "Built the event-driven email automation service using AWS SES and SNS.",
       "Triggered personalized follow-up emails based on email opens and user interactions.",

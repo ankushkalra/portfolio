@@ -1,5 +1,7 @@
 export interface Project {
   id: number;
+  stats: { value: string; label: string }[];
+  tags: string[];
   title: string;
   image: string;
   description: string;
