@@ -13,15 +13,22 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       <div className={styles.layout}>
         <div>
           <h2 className={styles.title}>
-            <a href={`/projects/${id}`}>{title}</a>
+            <a href={`/projects/${id}`}>
+              {title}
+              <span className={styles.arrow} aria-hidden="true">
+                →
+              </span>
+            </a>
           </h2>
           <p className={styles.description}>{short_description}</p>
         </div>
-        <img
-          className={styles.image}
-          src={image}
-          alt={`${title} project image`}
-        />
+        <div className={styles.imageWrapper}>
+          <img
+            className={styles.image}
+            src={image}
+            alt={`${title} project image`}
+          />
+        </div>
       </div>
     </Card>
   );

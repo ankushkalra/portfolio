@@ -1,22 +1,56 @@
 .card {
+  cursor: pointer;
   border: 1px solid rgba(255, 255, 255, 0.12);
   padding: 20px;
   flex-direction: column;
   gap: 10px;
   list-style: none;
   align-items: center;
-  border-radius: 8px;
+  border-radius: 16px;
+  background: linear-gradient(145deg,
+      rgba(255, 255, 255, 0.07),
+      rgba(255, 255, 255, 0.02));
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+
   color: #f4f1ea;
   transition: background-color 0.2s ease, border-color 0.2s ease,
-    transform 0.2s ease;
+    transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0;
+    background: radial-gradient(circle at 85% 0%,
+        rgba(102, 178, 255, 0.2),
+        transparent 60%);
+    transition: opacity 0.2s ease;
+  }
 
   & a {
     color: #66b2ff;
   }
 
   &:hover {
-    background: #2d2d2d;
-    border-color: rgba(255, 255, 255, 0.15);
-    transform: translateY(-2px);
+    border-color: rgba(102, 178, 255, 0.55);
+    transform: translateY(-4px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5),
+      0 0 28px rgba(102, 178, 255, 0.2);
+
+    &&::before {
+      opacity: 1;
+    }
+  }
+
+  /* for outline on press of a tab, now since whole card is clickable,
+  this adds the outline to whole card, rather than just text inside a */
+  &:has(a:focus-visible) {
+    outline: 2px solid #66b2ff;
+    outline-offset: 3px;
   }
 }

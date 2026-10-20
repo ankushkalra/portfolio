@@ -1,5 +1,28 @@
 .title {
   text-align: left;
+
+  & a {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+}
+
+.title a:focus-visible {
+  outline: none;
+}
+
+.title a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.arrow {
+  opacity: 0;
+  transform: translateX(-8px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
 }
 
 .description {
@@ -16,9 +39,31 @@
   }
 }
 
+.layout:hover .arrow {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.imageWrapper {
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
 .image {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  border-radius: 0.25rem;
+  transition: transform 0.4s ease;
+}
+
+.layout:hover .image {
+  transform: scale(1.08);
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  .image,
+  .arrow {
+    transition: none;
+  }
 }
