@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "~/src/components/Card/Card";
+import Card from "~/src/components/ui/Card/Card";
 import { Project } from "~/src/types/project";
 import styles from "./ProjectDetail.module.css";
 

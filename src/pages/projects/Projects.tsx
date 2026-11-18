@@ -1,7 +1,7 @@
 import ProjectCard from "~/src/components/ProjectCard/ProjectCard";
 import projects from "~/src/data/projects.json";
 import styles from "~/src/App.module.css";
-import Page from "~/src/components/Page/Page";
+import Page from "~/src/components/ui/Page/Page";
 
 const Projects = () => {
   return (

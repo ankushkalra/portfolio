@@ -1,5 +1,5 @@
 import { useParams } from "react-router";
-import Page from "~/src/components/Page/Page";
+import Page from "~/src/components/ui/Page/Page";
 import ProjectDetail from "~/src/components/project-detail/ProjectDetail";
 import ProjectNotFound from "~/src/components/ProjectNotFound/ProjectNotFound";
 import projects from "~/src/data/projects.json";

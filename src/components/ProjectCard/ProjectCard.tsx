@@ -1,6 +1,6 @@
 import { Project } from "~/src/types/project";
 import styles from "./ProjectCard.module.css";
-import Card from "~/src/components/Card/Card";
+import Card from "~/src/components/ui/Card/Card";
 
 interface ProjectCardProps {
   project: Project;

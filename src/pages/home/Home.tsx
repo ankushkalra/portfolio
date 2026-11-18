@@ -1,6 +1,6 @@
 import styles from "~/src/App.module.css";
 import Hero from "~/src/components/Hero/Hero";
-import { MobileCard } from "~/src/components/MobileCard/MobileCard";
+import { MobileCard } from "~/src/components/ui/MobileCard/MobileCard";
 
 function Home() {
   return (

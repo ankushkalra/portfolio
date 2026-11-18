@@ -1,5 +1,5 @@
-import Button from "../Button/Button";
-import Card from "~/src/components/Card/Card";
+import Button from "~/src/components/ui/Button/Button";
+import Card from "~/src/components/ui/Card/Card";
 import styles from "./DomainCard.module.css";
 import Tag from "~/src/components/Tag/Tag";
 
