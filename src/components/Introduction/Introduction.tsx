@@ -16,7 +16,7 @@ const Introduction: React.FC<object> = () => {
           fontFamily: "serif",
         }}
       >
-        I make complex things feel simple
+        Behind every great user experience is a disciplined engineering system
       </p>
       <div>
         <p className={`${styles.title} ${styles.gradientText}`}>Ankush Kalra</p>
